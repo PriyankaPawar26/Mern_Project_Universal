@@ -1,0 +1,48 @@
+<% include adminheader %>
+
+  <body>
+    <!-- START PAGE SOURCE -->
+    <div class="main">
+      <div class="clr"></div>
+      <div class="header">
+        <div class="clr"></div>
+      </div>
+      <div class="content">
+        <center>
+          <h3>View & Manage Users</h3>
+        </center>
+        <table class="table">
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Contact</th>
+                <th>Date</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>Gender</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% for (let row of userDetails){ %>
+              <tr>
+                <td><%= row._id%></td>
+                <td><%= row.name%></td>
+                <td><%= row.email%></td>
+                <td><%= row.contact%></td>
+                <td><%= row.dt%></td>
+                <td><%= row.address%></td>
+                <td><%= row.city%></td>
+                <td><%= row.gender%></td>
+                <td><%= row.status%></td>
+              </tr>
+              <% } %>
+            </tbody>
+          </table>
+      </div>
+      
+    </div>
+    <% include footer %>

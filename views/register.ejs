@@ -1,0 +1,66 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+      <!-- <title>
+        <%= (typeof title != "undefined" ? title : "") %>
+    </title>   -->
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div id="tooplate_header_wrapper">
+
+        <div id="tooplate_header">
+        
+            <div class="cleaner_h10"></div>
+            
+            <div id="tooplate_menu">
+              
+                <div id="home_menu"><a href="#"></a></div>
+                    
+                <ul>
+                    <li><a href="index">Home</a></li>
+                    <li><a href="about" class="current">About Us</a></li>
+                    <li><a href="register">Register</a></li>
+                    <li><a href="login">login</a></li>
+                    <li><a href="contact">Contact</a></li>
+                </ul>    	
+            
+            </div>
+    <form action="/register" method="post">
+         <div class="container"> 
+          <h1 style="margin-top: 40px;">Register</h1>
+          <font color="orange"><%= msg%></font>
+          
+          
+          <input type="text" placeholder="Enter name" class="form-control" name="name" id="name" required>
+          
+          
+          <input type="text" placeholder="Enter Email" class="form-control" name="email" id="email" required>
+      
+          
+          <input type="password" placeholder="Enter Password" class="form-control" name="psw" id="psw" required>
+      
+          
+          <input type="password" placeholder="Repeat Password" class="form-control" name="psw-repeat" id="psw-repeat" required>
+
+          
+          <input type="text" class="form-control" name="city" id="city"  placeholder="Enter city">
+
+          <label for="address"><b>Address</b></label><br>
+          <textarea name="address"  class="form-control" id="" cols="30" rows="5"></textarea><br>
+
+          <label for="gender"><b>Gender</b></label><br>
+          <input type="radio" name="gender" id="gender1">
+          <label for="male"><b>Male</b></label><br>
+          <input type="radio" name="gender" id="gender2">
+          <label for="female"><b>Female</b></label><br>
+
+          
+          <hr>
+      
+          <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p><br>
+          <button type="submit" class="registerbtn">Register</button><br>
+        div> 
+      </form>
+
+     
