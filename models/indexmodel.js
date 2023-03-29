@@ -59,6 +59,7 @@ this.userlogin = (userDetails,callback)=>{
         console.log(err)
     })
 }
+
 }
 
 module.exports = new indexmodel();
